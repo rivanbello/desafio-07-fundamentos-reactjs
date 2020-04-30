@@ -21,6 +21,7 @@ export const Container = styled.div<ContainerProps>`
         color: #fff;
         text-decoration: none;
         font-size: 16px;
+        opacity: 0.6;
         transition: opacity 0.2s;
 
         & + a {
@@ -28,8 +29,18 @@ export const Container = styled.div<ContainerProps>`
         }
 
         &:hover {
-          opacity: 0.6;
+          opacity: 1;
         }
+
+        /* &.active::after {
+          position: absolute;
+          width: 73px;
+          height: 2px;
+          left: 1102px;
+          top: 69px;
+
+          background: #ff872c;
+        } */
       }
     }
   }
